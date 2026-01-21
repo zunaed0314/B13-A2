@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        :root {
+            --main-gradient: linear-gradient(45deg, 
+                rgba(247, 233, 63, 1), 
+                rgba(251, 9, 180, 1), 
+                rgba(145, 0, 248, 1)
+            );
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        #logo-span{
+            background: var(--main-gradient);
+            background-clip: text;
+            color: transparent
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: #1A0B2E;
+        }
+
+        .btn{
+            background: var(--main-gradient);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 40px;
+            color:white;
+            cursor: pointer;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+        }
+
+        li{
+            display: inline;
+            margin: 0 15px;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            
+        }
+
+
+    </style>
 </head>
 <body>
-    
+    <header>
+        <navbar class="navbar">
+            <div class="logo">
+                <p style="font-weight:600; font-size: x-large; font-family: sans-serif; color:white;">TECH<span id="logo-span">WAVE</span></p>
+            </div>
+            <ul class="nav-links">
+                <li>About</li>
+                <li>Episodes</li>
+                <li>Host</li>
+            </ul>
+            <button class="btn">
+                Subscribe        
+            </button>
+        </navbar>
+    </header>
 </body>
 </html>
