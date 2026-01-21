@@ -162,6 +162,7 @@ li {
     font-weight: bold;
 }
 
+
 .about1{
     width: 100%;
     height: auto;
@@ -171,21 +172,21 @@ li {
     align-items: center;
     padding: 2vh 0;
     flex-direction: column;
+    padding-bottom: 10vh;
 }
 
 #ash{
     color: rgb(179, 175, 175);
-
 }
 
 .about2{
     display: flex;
-    width: 60%;
+    width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-bottom:0.1px solid rgb(59, 17, 95);
-    padding: 4vh 0;
+    padding: 4vh 0 8vh 0 ;
 }
 
 .about3{
@@ -203,6 +204,7 @@ li {
     font-size: small;
     display: flex;
     justify-content: center;
+    /* border: 1px solid red; */
 }
 
 #ab3{
@@ -215,3 +217,259 @@ li {
     justify-content: center;
     margin-top: 10vh;
 }
+
+.grids {
+    padding: 80px 0;
+    background: rgba(35, 14, 61, 1);
+}
+
+.grid-container {
+    max-width: 78vw;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Changed to flexible columns */
+    grid-template-rows: repeat(2, auto); /* Changed to auto height */
+    gap: 3.5vh;
+    width: 100%;
+    grid-template-areas: 
+        "grid-1 grid-2 grid-2"
+        "grid-1 grid-3 grid-3"
+        "grid-4 grid-4 grid-5";
+}
+
+.grid {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(59, 17, 95, 0.5);
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.grid:hover {
+    border-color: rgba(8, 231, 30, 0.3);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.grid .number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.grid h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+.grid p {
+    color: rgb(179, 175, 175);
+    line-height: 1.6;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* Make first grid item span two rows */
+.first {
+    grid-row: span 2;
+}
+
+.grid img{
+    width:3vw;  margin-bottom:2vh;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .reviews {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "grid-1 grid-2"
+            "grid-1 grid-3"
+            "grid-4 grid-5";
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "grid-1"
+            "grid-2"
+            "grid-3"
+            "grid-4"
+            "grid-5";
+    }
+    
+    .first {
+        grid-row: auto;
+    }
+}
+
+.epi-host{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background: rgba(26, 11, 46, 1);
+    padding:10vh 0 15vh 0;
+}
+
+.container-eh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.episodes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom:10vh;
+}
+
+.epi-grids{
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap:2vw;
+    /* border: 2px solid red; */
+}
+
+.card{
+    box-shadow: 10px 10px 50px rgb(0, 0, 0);
+    border-radius: 20px;
+    background: rgba(37, 13, 68, 1);
+    /* border:1px solid blue; */
+}
+
+#vids{
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+}
+
+.card h4{
+    color:white;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1vh;
+}
+
+#ash2{
+    color:grey;
+    font-style: small;
+    margin-bottom: 1.5vh;
+}
+
+.card-div{
+    width:20vw;
+    padding:2vh;
+    /* border:2px solid red; */
+}
+
+.episodes h1{
+    /* margin: 5vh; */
+    color:white;
+    font-family:sans-serif;
+    margin-bottom:5vh;
+}
+
+#duration{
+    color:#00ff88;
+    font-family: sans-serif;
+}
+
+.host{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.host h1{
+    color:white;
+    font-family: sans-serif;
+    margin-bottom: 5vh;
+}
+
+.host-details{
+    width:73.5%;
+    padding:5vh;
+    display:flex;
+    background: rgba(53, 17, 101, 0.4);
+    border-radius: 25px;
+    gap:2vw;
+}
+
+.more-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.more-details h2{
+    margin-bottom:2vh;
+    color:white;
+    font-family: sans-serif;
+}
+
+.more-details p{
+    color:gray;
+    font-family: sans-serif;
+    margin-bottom:3vh;
+}
+
+.logos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 15vw;
+}
+
+.logos #logo{
+    border-radius: 50%;
+    border:0.1px solid grey;
+    display: flex;
+    justify-content: center;
+    padding:10px;  
+}
+
+.footer {
+    width: 100%;
+    height: 40vh;
+    margin-bottom: -5vh;
+    overflow: hidden;
+    position: relative; 
+}
+
+.footer-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+}
+
+
+
