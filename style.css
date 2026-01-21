@@ -12,7 +12,7 @@
 }
 
 .header {
-    border-bottom: 0.1px solid rgb(133, 133, 133);
+    border-bottom: 0.1px solid rgb(59, 17, 95);
 }
 
 a {
@@ -65,7 +65,26 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative; 
+    position: relative;
+    border-bottom: 0.1px solid rgb(59, 17, 95); 
+}
+
+.hero-dot1{
+    position: absolute;
+    height: auto;
+    padding: 0.5vh 1vw;
+    background-color: rgb(97, 225, 97);
+    color: black;
+    border-radius: 40px;
+    top: 10%;
+    right: 5%;
+    font-family: 'Arial', sans-serif;
+    font-weight: bolder;
+    text-shadow: 
+        0 0 20px #fff,            /* White glow */
+        0 0 20px #00ff00,        /* Green glow */
+        0 0 20px #00ff00,        /* More green glow */
+        0 0 20px #00ff00;
 }
 
 .hero-img {
@@ -123,6 +142,9 @@ li {
     gap:0.5vw;
     border-color: transparent;
     cursor: pointer;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .subscribe{
@@ -133,8 +155,63 @@ li {
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    border: 2px solid rgb(11, 192, 11);
-    color: rgb(8, 231, 30);
+    border: 2px solid #00ff88;
+    color: #00ff88;
     gap:0.5vw;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.about1{
+    width: 100%;
+    height: auto;
+    background: rgba(26, 11, 46, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 0;
+    flex-direction: column;
+}
+
+#ash{
+    color: rgb(179, 175, 175);
+
+}
+
+.about2{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom:0.1px solid rgb(59, 17, 95);
+    padding: 4vh 0;
+}
+
+.about3{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 60%;
+    justify-self: center;
+    /* border: 1px solid red; */
+    margin-top: 1vh;
+}
+
+#ash1{
+    color: rgb(179, 175, 175);
+    font-family: sans-serif;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+}
+
+#ab3{
+    color: #00ff88; 
+    font-family: sans-serif; 
+    font-style: bold; 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    display: flex; 
+    justify-content: center;
+    margin-top: 10vh;
 }
