@@ -31,6 +31,8 @@
         align-items: center;
         padding: 20px 30px;
         background-color: #1A0B2E;
+
+
     }
 
     .btn {
@@ -545,11 +547,9 @@ body {
 }
 
 .navbar li{
-    text-decoration: none;
+    list-style:none;
     color:white;
-    list-style-type: none;
 }
-
 
 #nav-toggle {
     display: none;
@@ -613,13 +613,18 @@ body {
 }
 
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border-bottom: 0.1px solid rgb(59, 17, 95);
-}
+        width: 100%;
+        min-height: 90vh;
+        object-fit: cover;
+        background-image: url(assets/hero-bg.png);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-bottom: 0.1px solid rgb(59, 17, 95);
+    }
 
 .hero-dot1 {
     position: absolute;
@@ -1076,7 +1081,7 @@ body {
 }
 
 .host-details {
-    width: 67%;
+    width: 67.5%;
     padding: 5vh;
     display: flex;
     background: rgba(53, 17, 101, 0.4);
@@ -1117,7 +1122,6 @@ body {
     padding: 10px;
     width: 20px;
     height: 20px;
-    cursor:pointer;
 }
 
 .footer {
@@ -1167,7 +1171,6 @@ body {
     color: rgb(191, 190, 190);
     gap: 0.5vw;
     margin-top: -5vh;
-    cursor: pointer;
 }
 
 @media (max-width: 576px) {
@@ -1188,10 +1191,6 @@ body {
 }
 
 
-
-
-
-/* ANIMATIONS */
 * {
     transition: all 0.3s ease-in-out;
 }
