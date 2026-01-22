@@ -11,13 +11,17 @@
 
 <body>
 
-    <img src="assets/hamburger-menu.png" alt="">
     <header class="header">
-        <navbar class="navbar">
+        <nav class="navbar">
             <div class="logo">
-                <p style="font-weight:600; font-size: x-large; font-family: sans-serif; color:white;">TECH<span
+                <p style="font-weight:600; font-size: x-large; font-family: sans-serif; color:white;">Tech<span
                         id="logo-span">WAVE</span></p>
             </div>
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
             <ul class="nav-links">
                 <li>About</li>
                 <li>Episodes</li>
@@ -25,8 +29,10 @@
             </ul>
             <button class="btn">
                 Subscribe
+                <img src="assets/next.png" alt="" width="12">
             </button>
-        </navbar>
+            <!-- <i class="fa-solid fa-bars menu-icon"></i> -->
+        </nav>
     </header>
     <div class="hero-section">
         <div class="hero-img">
@@ -39,7 +45,7 @@
         <p class="hero-text">
             TechWAVE
         </p>
-        <p style="color:rgb(191, 201, 210)">
+        <p id="hero-text-small">
             Your daily dose of tech insights, productivity hacks, and personal growth
         </p>
         <div class="hero-btn">
@@ -57,9 +63,9 @@
     <section class="about">
         <div class="about1">
             <div class="about2">
-                <p style="color: white; font-family: sans-serif; font-style: bold; font-size: 3rem; font-weight: 700;">
+                <h1>
                     About the Podcast
-                </p>
+                </h1>
 
                 <p id="ash">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.</p>
                 <p id="ash">We break down complex topics into digestible insights, explore productivity strategies that
@@ -70,31 +76,29 @@
 
             </div>
             <div class="about3">
-                <p id="ab3">
-                    150K+
-                </p>
-                <p id="ab3">
-                    200+
-                </p>
-                <p id="ab3">
-                    4.9 <i class="fa-solid fa-star" style="color: #00ff88;"></i>
-                </p>
-                <p id="ab3">
-                    50+
-                </p>
-                <p id="ash1">
-                    Monthly Listeners
-                </p>
-                <p id="ash1">
-                    Episodes Published
-                </p>
-                <p id="ash1">
-                    Average Rating
-                </p>
-                <p id="ash1">
-                    Industry Experts
-                </p>
+
+                <div class="stat">
+                    <p class="ab3">150K+</p>
+                    <p class="ash1">Monthly Listeners</p>
+                </div>
+
+                <div class="stat">
+                    <p class="ab3">200+</p>
+                    <p class="ash1">Episodes Published</p>
+                </div>
+
+                <div class="stat">
+                    <p class="ab3">4.9 <i class="fa-solid fa-star"></i></p>
+                    <p class="ash1">Average Rating</p>
+                </div>
+
+                <div class="stat">
+                    <p class="ab3">50+</p>
+                    <p class="ash1">Industry Experts</p>
+                </div>
+
             </div>
+
         </div>
         </div>
     </section>
@@ -154,7 +158,7 @@
                 <h1>Featured Episodes</h1>
                 <div class="epi-grids">
                     <div class="card">
-                        <iframe width="330" height="180" id="vids" src="https://www.youtube.com/embed/s4BibernJxU"
+                        <iframe id="vids" src="https://www.youtube.com/embed/s4BibernJxU"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
@@ -168,12 +172,9 @@
                                 <span>42 min</span>
                             </span>
                         </div>
-
-
-
                     </div>
                     <div class="card">
-                        <iframe width="330" height="180" id="vids" src="https://www.youtube.com/embed/dXEj7QTnuFY"
+                        <iframe id="vids" src="https://www.youtube.com/embed/dXEj7QTnuFY"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
@@ -190,7 +191,7 @@
 
                     </div>
                     <div class="card">
-                        <iframe width="330" height="180" id="vids" src="https://www.youtube.com/embed/bJpmwAn4zmo"
+                        <iframe id="vids" src="https://www.youtube.com/embed/bJpmwAn4zmo"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
@@ -220,10 +221,18 @@
                             TechWave, Alex shares insights from industry leaders and practical advice for anyone looking
                             to grow in tech.</p>
                         <div class="logos">
-                            <img src="assets/linkedin.png" alt="" id="logo">
-                            <img src="assets/x.png" alt="" id="logo">
-                            <img src="assets/instagram.png" alt="" id="logo">
-                            <img src="assets/youtube.png" alt="" id="logo">
+                            <div class="logo">
+                                <img src="assets/linkedin.png" alt="">
+                            </div>
+                            <div class="logo">
+                                <img src="assets/x.png" alt="">
+                            </div>
+                            <div class="logo">
+                                <img src="assets/instagram.png" alt="">
+                            </div>
+                            <div class="logo">
+                                <img src="assets/youtube.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -245,7 +254,7 @@
         <p style="font-family: sans-serif; color:rgb(209, 208, 208)">© 2026 TechWave Podcast. All rights reserved.</p>
     </div>
 
-    
+
 
 
 </body>
